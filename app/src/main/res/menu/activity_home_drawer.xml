@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_grey"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_myQr"
+            android:icon="@drawable/ic_qr_code_grey"
+            android:title="My QR" />
+
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_blue"
+            android:title="History" />
+
+        <item
+            android:id="@+id/nav_addMoney"
+            android:icon="@drawable/ic_add_money"
+            android:title="Add Money" />
+
+        <item
+            android:id="@+id/nav_appLock"
+            android:icon="@drawable/ic_lock"
+            android:title="App Lock" />
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/ic_information"
+            android:title="FAQ" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="Share App" />
+
+        <item
+            android:id="@+id/nav_rateUs"
+            android:icon="@drawable/ic_rating"
+            android:title="Rate Us" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help"
+            android:title="Help and Support" />
+    </group>
+</menu>

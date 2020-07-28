@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2f8acb</color>
+    <color name="colorPrimaryDark">#2f8acb</color>
+    <color name="colorAccent">#2f8acb</color>
+    <color name="toolbar_clr">#002037</color>
+    <color name="app_clr">#1174B9</color>
+    <color name="green_clr">#19A104</color>
+
+
+
+
+
+
+
+    <color name="color_1">#DB4437</color>
+    <color name="color_2">#E91E63</color>
+    <color name="color_3">#FF5722</color>
+    <color name="color_4">#EF6C00</color>
+    <color name="color_5">#689F38</color>
+    <color name="color_6">#0097A7</color>
+    <color name="color_7">#4285F4</color>
+    <color name="color_8">#039BE5</color>
+    <color name="color_9">#3F51B5</color>
+    <color name="color_10">#673AB7</color>
+    <color name="color_11">#757575</color>
+    <color name="text_clr">#242424</color>
+
+
+    <color name="color_12">#8b7765</color>
+    <color name="color_13">#2f4f4f</color>
+    <color name="color_14">#2f4f4f</color>
+    <color name="color_15">#8470ff</color>
+    <color name="color_16">#00ced1</color>
+    <color name="color_17">#66cdaa</color>
+    <color name="color_18">#00ff7f</color>
+    <color name="color_19">#d2691e</color>
+    <color name="color_20">#ff1493</color>
+</resources>

@@ -1,0 +1,6 @@
+<TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Home"
+    android:textSize="11sp"
+    android:drawableTop="@drawable/ic_home_coloured"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

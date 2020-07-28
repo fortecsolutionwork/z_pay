@@ -1,0 +1,191 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/app_clr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:text="Bill Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/padding_left"
+        android:layout_marginTop="@dimen/label_margin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="0.8"
+                android:text="Bill Amount: "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_weight="1.2"
+                android:id="@+id/customerNameTv"
+                android:layout_marginLeft="@dimen/field_margin_top"
+                android:text="---"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/label_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="0.8"
+                android:text="Net Amount: "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_weight="1.2"
+                android:id="@+id/billAmountTv"
+                android:layout_marginLeft="@dimen/field_margin_top"
+                android:text="---"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="0.8"
+                android:text="Bill Date: "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_weight="1.2"
+                android:id="@+id/dueDateTv"
+                android:layout_marginLeft="@dimen/field_margin_top"
+                android:text="---"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/label_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="0.8"
+                android:text="Due Date : "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_weight="1.2"
+                android:id="@+id/dueAmountTv"
+                android:layout_marginLeft="@dimen/field_margin_top"
+                android:text="---"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/label_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="0.8"
+                android:text="Plan Name: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_weight="1.2"
+                android:id="@+id/planNameTv"
+                android:layout_marginLeft="@dimen/field_margin_top"
+                android:text="---"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/label_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="0.8"
+                android:text="Balance : "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_weight="1.2"
+                android:id="@+id/balanceTv"
+                android:layout_marginLeft="@dimen/field_margin_top"
+                android:text="---"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

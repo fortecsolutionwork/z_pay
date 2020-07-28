@@ -1,0 +1,2 @@
+rootProject.name='zPay'
+include ':app'

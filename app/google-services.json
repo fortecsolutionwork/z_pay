@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "673118637533",
+    "firebase_url": "https://zpay-c181f.firebaseio.com",
+    "project_id": "zpay-c181f",
+    "storage_bucket": "zpay-c181f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673118637533:android:2690b2a18c6f855a47ba34",
+        "android_client_info": {
+          "package_name": "com.application.zpay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673118637533-m84i27d37sl8bs9jjpvmfq89f7pjrtik.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.application.zpay",
+            "certificate_hash": "12724ad2216f64e10282e272c10f7cf1983aac14"
+          }
+        },
+        {
+          "client_id": "673118637533-sogfbvd342mg8n6lukj1ahlk006t0db3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.application.zpay",
+            "certificate_hash": "b6da3e891890af3ed934be49e40501fa398ce03f"
+          }
+        },
+        {
+          "client_id": "673118637533-imbbt3iucavj9bq9sfj7n33bi8m9pj7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJq_efzwgVCmDw1YpIb-fQ5h3OBV1-aYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673118637533-imbbt3iucavj9bq9sfj7n33bi8m9pj7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

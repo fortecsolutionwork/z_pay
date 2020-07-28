@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:iss_auto_cycle="true"
+                app:iss_period="1000"
+                app:iss_delay="0"/>
+
+          <!--  <LinearLayout
+                android:background="@drawable/money_transfer"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </LinearLayout>-->
+
+            <androidx.viewpager.widget.ViewPager
+                android:visibility="gone"
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+
+            </androidx.viewpager.widget.ViewPager>
+
+               <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:id="@+id/viewPagerIndicatorIconsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/firstDotImageView"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_dots_blue" />
+
+                <ImageView
+                    android:id="@+id/secondDotImageView"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="7dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_dots_grey" />
+
+                <ImageView
+                    android:id="@+id/thirdDotImageView"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="7dp"
+
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_dots_grey" />
+
+                <ImageView
+                    android:id="@+id/fourthDotImageView"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="7dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_dots_grey" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/field_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_marginTop="40dp"
+               android:weightSum="4"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:id="@+id/prepaidLl"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:layout_width="35dp"
+                       android:layout_height="38dp">
+
+                       <ImageView
+                           android:src="@drawable/ic_prepaid"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+
+                       </ImageView>
+
+                   </LinearLayout>
+
+
+                   <TextView
+                       android:gravity="center"
+                       android:textColor="@android:color/black"
+                       android:textSize="12sp"
+                       android:text="Prepaid"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                   </TextView>
+
+
+               </LinearLayout>
+
+
+
+               <LinearLayout
+                   android:id="@+id/postpaidLl"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content">
+
+
+                   <LinearLayout
+                       android:layout_width="35dp"
+                       android:layout_height="35dp">
+
+                       <ImageView
+                           android:src="@drawable/ic_postpaid"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+
+                       </ImageView>
+
+                   </LinearLayout>
+
+
+
+                   <TextView
+                       android:gravity="center"
+                       android:textColor="@android:color/black"
+                       android:textSize="12sp"
+                       android:text="Postpaid"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                   </TextView>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_marginTop="-10dp"
+                   android:id="@+id/electricityLl"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:layout_width="45dp"
+                       android:layout_height="45dp">
+                       <ImageView
+                           android:src="@drawable/ic_lamp"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+
+                       </ImageView>
+
+                   </LinearLayout>
+
+
+
+                   <TextView
+                       android:gravity="center"
+                       android:textColor="@android:color/black"
+                       android:textSize="12sp"
+                       android:text="Electricity"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                   </TextView>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/dthLl"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:layout_width="35dp"
+                       android:layout_height="35dp">
+
+                       <ImageView
+                           android:src="@drawable/ic_dish"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+
+                       </ImageView>
+
+                   </LinearLayout>
+
+
+
+                   <TextView
+                       android:gravity="center"
+                       android:textColor="@android:color/black"
+                       android:textSize="12sp"
+                       android:text="DTH"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                   </TextView>
+
+               </LinearLayout>
+
+
+
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/landlineLl"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+                        <ImageView
+                            android:src="@drawable/ic_landline"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:text="Landline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gasLl"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+                        <ImageView
+                            android:src="@drawable/ic_gas"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:text="Gas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/waterLl"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+                        <ImageView
+                            android:src="@drawable/ic_water"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:text="Water"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/broadbandLl"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+                        <ImageView
+                            android:src="@drawable/ic_broadband"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:text="Broadband"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_fastag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:text="FastTag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:text="Donate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
